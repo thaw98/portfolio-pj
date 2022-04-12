@@ -3,16 +3,20 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Sticky Navbar | CodingNepal</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="./css/style.css" />
-    <link
+    <!-- <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
-    />
+    /> -->
+    <script
+      src="https://kit.fontawesome.com/12b0473b9f.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700;800;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
       rel="stylesheet"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
@@ -29,10 +33,10 @@
             <i class="fas fa-times"></i>
           </div>
           <li><a href="#">Home</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Skills</a></li>
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="icon menu-btn">
           <i class="fas fa-bars"></i>
@@ -43,7 +47,7 @@
       <div class="main-container">
         <div class="main left">
           <div class="main-text">
-            <div class="text-1">Hi, my name is</div>
+            <div class="text-1">Hi, I am</div>
             <div class="text-2">Louis Evans</div>
             <div class="text-3">I'm a <span class="typing"></span></div>
             <a href="#">Download CV</a>
@@ -57,14 +61,14 @@
     <!-- about section start -->
     <section class="about" id="about">
       <div class="max-width">
-        <h2 class="title">About me</h2>
+        <h2 class="title">About</h2>
         <div class="about-content">
           <div class="column left">
             <img src="./img/profile2.jpg" class="about-img" alt="" />
           </div>
           <div class="column right">
             <div class="text">
-              I'm Prakash and I'm a <span class="typing-2"></span>
+              I'm Louis and I'm a <span class="typing-2"></span>
             </div>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut
@@ -76,12 +80,89 @@
               Dolor iste excepturi ratione soluta quas culpa voluptatum
               repudiandae harum non.
             </p>
-            <a href="#">Download CV</a>
+            <a href="#contact">Contact</a>
           </div>
         </div>
       </div>
     </section>
-
+    <!-- Portfolio section start -->
+    <section class="portfolio" id="portfolio">
+      <h2 class="title">Portfolio</h2>
+      <div class="portfolio-content">
+        <div class="portfolio-card">
+          <!-- <img src="./img/skills.jpg" width="300px" height="300px" alt="" />
+        </div>
+        <div class="portfolio-card">
+          <img src="./img/skills.jpg" width="300px" height="300px" alt="" />
+        </div>
+        <div class="portfolio-card">
+          <img src="./img/skills.jpg" width="300px" height="300px" alt="" />
+        </div>
+        <div class="portfolio-card">
+          <img src="./img/skills.jpg" width="300px" height="300px" alt="" />
+        </div>
+        <div class="portfolio-card">
+          <img src="./img/skills.jpg" width="300px" height="300px" alt="" />
+        </div>
+        <div class="portfolio-card">
+          <img src="./img/skills.jpg" width="300px" height="300px" alt="" /> -->
+        </div>
+      </div>
+    </section>
+    <!-- Skills section start -->
+    <section class="skills" id="skills">
+      <h2 class="title">Skills</h2>
+      <div class="skills-content bd-grid">
+        <div class="skills-left">
+          <div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <i class="fab fa-html5 skills-icon"></i>
+                <span class="skills-name">HTML5</span>
+              </div>
+              <div class="skills-bar skills-html"></div>
+              <div>
+                <span class="skills-percentage">95%</span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <i class="fab fa-css3-alt skills-icon"></i>
+                <span class="skills-name">CSS3</span>
+              </div>
+              <div class="skills-bar skills-css"></div>
+              <div>
+                <span class="skills-percentage">80%</span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <i class="fa-brands fa-js skills-icon"></i>
+                <span class="skills-name">JAVASCRIPT</span>
+              </div>
+              <div class="skills-bar skills-js"></div>
+              <div>
+                <span class="skills-percentage">65%</span>
+              </div>
+            </div>
+            <div class="skills-data">
+              <div class="skills-names">
+                <i class="fa-regular fa-paintbrush-pencil skills-icon"></i>
+                <span class="skills-name">UX/UI</span>
+              </div>
+              <div class="skills-bar skills-ux"></div>
+              <div>
+                <span class="skills-percentage">75%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="skills-right">
+          <img src="./img/skills.jpg" alt="" class="skills-img" />
+        </div>
+      </div>
+    </section>
+    <!-- Contact section start -->
     <script src="./js/main.js"></script>
   </body>
 </html>
