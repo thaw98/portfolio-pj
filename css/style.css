@@ -41,8 +41,7 @@
 footer {
   font-family: "Montserrat", sans-serif;
 }
-.about .about-content,
-.contact .contact-content {
+.about .about-content {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -150,7 +149,7 @@ section .title::after {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  padding-bottom: 90px;
+  padding-bottom: 100px;
   font-family: "Montserrat", sans-serif;
 }
 /* Main left */
@@ -280,6 +279,39 @@ section .title::after {
   /* background-color: #232323; */
   background-color: #272932;
 }
+/* Portfolio Grid */
+.portfolio-content {
+  display: grid;
+  grid-gap: 1rem;
+  text-align: center;
+  padding: 0px 40px;
+}
+.cardp {
+  /*👉  background-color: dodgerblue;
+  color: white;
+  padding: 1rem;
+  height: 4rem;👈*/
+}
+.portfolio-card .portfolio-img-box {
+  /*👉 width: 350px;👈*/
+  /*👉  width: 50%;👈*/
+  border-radius: 10px;
+  overflow: hidden;
+}
+.portfolio-card .portfolio-img-box img {
+  width: 100%;
+  height: 300px;
+  /*👉  width: 70%;👈*/
+  /*👉  border-radius: 15px;👈*/
+  opacity: 0.6;
+  transition: 0.8s;
+  object-fit: cover;
+  cursor: pointer;
+}
+.portfolio-card .portfolio-img-box:hover img {
+  opacity: 1;
+  transform: scale(1.1);
+}
 /* Skills section */
 .skills {
   padding: 80px 0;
@@ -390,6 +422,190 @@ section .title::after {
     }👈*/
   }
 }
+/* Contact section start */
+.contact {
+  padding: 80px 0;
+  background-color: #272932;
+  color: #fff;
+}
+.contact .title {
+  color: #fff;
+}
+.contact .title::after {
+  content: "get in touch";
+  text-transform: uppercase;
+  background-color: #272932;
+}
+.contact-container {
+  max-width: 960px;
+  margin: auto;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  background: #333644;
+  box-shadow: 0 0 1rem hsla(0 0 0 / 16%);
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+.form-container {
+  padding: 20px;
+}
+.form-container h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+/* Form styling */
+.input-box {
+  height: 50px;
+  width: 100%;
+  margin: 16px 0;
+  position: relative;
+  font-weight: 500;
+}
+.input-box input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  font-size: 16px;
+  outline: none;
+  padding-left: 16px;
+  background: #272932;
+  border: 2px solid transparent;
+  transition: all 0.3s ease;
+  color: #fff;
+}
+.input-box input:focus,
+.input-box input:valid {
+  border-color: var(--themeblue);
+  background-color: #333644;
+}
+.input-box label {
+  position: absolute;
+  left: 18px;
+  top: 50%;
+  color: var(--themeblue);
+  font-size: 15px;
+  pointer-events: none;
+  transform: translateY(-50%);
+  transition: all 0.3s ease;
+}
+.input-box input:focus ~ label,
+.input-box input:valid ~ label {
+  top: 0;
+  left: 12px;
+  display: 14px;
+  color: var(--themeblue);
+  background: #333644;
+}
+.message-box {
+  min-height: 150px;
+  position: relative;
+}
+.message-box textarea {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  resize: none;
+  background: #272932;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease;
+  padding-left: 15px;
+  padding-top: 20px;
+}
+.message-box textarea:focus {
+  border-color: var(--themeblue);
+  background-color: #333644;
+}
+.message-box label {
+  position: absolute;
+  font-size: 16px;
+  color: var(--themeblue);
+  left: 18px;
+  top: 6px;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+textarea:focus ~ label {
+  left: 12px;
+  top: -10px;
+  color: var(--themeblue);
+  font-size: 16px;
+  background: #333644;
+}
+.input-box button {
+  color: #fff;
+  background: var(--themeblue);
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  border: none;
+  height: 50px;
+  border-radius: 6px;
+}
+.content .input-box button:hover {
+  background-color: var(--themeblue);
+}
+/*👉.contact-form {
+  display: grid;
+  row-gap: 1rem;
+}
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: #272932;
+  padding: 10px;
+  font-size: 0.9rem;
+  color: #fff;
+  border-radius: 0.4rem;
+}
+.contact-form textarea {
+  resize: none;
+  height: 200px;
+}
+.contact-form .send-button {
+  border: none;
+  outline: none;
+  background: #00dbde;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.contact-form .send-button:hover {
+  background: hsl(181, 100%, 44%, 0.8);
+  transition: 0.3s all linear;
+}👈*/
+.map iframe {
+  width: 100%;
+  height: 100%;
+}
+/* Making Responisve */
+@media (max-width: 964px) {
+  .contact-container {
+    margin: 0 auto;
+    width: 90%;
+  }
+}
+@media (max-width: 700px) {
+  .contact-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 20rem !important;
+  }
+  .map iframe {
+    height: 400px;
+  }
+}
+
 /* Navigation responsive */
 @media (max-width: 1230px) {
   .content {
@@ -506,5 +722,23 @@ section .title::after {
   }
   .about .about-content .right a {
     font-size: 18px;
+  }
+}
+@media (min-width: 725px) {
+  .portfolio-content {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0px 40px;
+  }
+  /*👉  .cardp {
+    width: 100%;
+  }👈*/
+  /*👉  .portfolio-card .portfolio-img-box img {
+    width: 100%;
+  }👈*/
+}
+@media (min-width: 1090px) {
+  .portfolio-content {
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0px 80px;
   }
 }

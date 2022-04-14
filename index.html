@@ -50,7 +50,9 @@
             <div class="text-1">Hi, I am</div>
             <div class="text-2">Louis Evans</div>
             <div class="text-3">I'm a <span class="typing"></span></div>
-            <a href="#">Download CV</a>
+            <a href="#"
+              >Download CV <i class="fa-regular fa-download fa-fw"></i
+            ></a>
           </div>
         </div>
         <div class="main right">
@@ -90,29 +92,41 @@
       <h2 class="title">Portfolio</h2>
       <div class="portfolio-content">
         <div class="portfolio-card">
-          <!-- <img src="./img/skills.jpg" width="300px" height="300px" alt="" />
+          <div class="portfolio-img-box">
+            <img src="./img/skills.jpg" alt="" />
+          </div>
         </div>
         <div class="portfolio-card">
-          <img src="./img/skills.jpg" width="300px" height="300px" alt="" />
+          <div class="portfolio-img-box">
+            <img src="./img/work5.jpg" alt="" />
+          </div>
         </div>
         <div class="portfolio-card">
-          <img src="./img/skills.jpg" width="300px" height="300px" alt="" />
+          <div class="portfolio-img-box">
+            <img src="./img/banner.webp" alt="" />
+          </div>
         </div>
         <div class="portfolio-card">
-          <img src="./img/skills.jpg" width="300px" height="300px" alt="" />
+          <div class="portfolio-img-box">
+            <img src="./img/work7.jpg" alt="" />
+          </div>
         </div>
         <div class="portfolio-card">
-          <img src="./img/skills.jpg" width="300px" height="300px" alt="" />
+          <div class="portfolio-img-box">
+            <img src="./img/work1.jpg" alt="" />
+          </div>
         </div>
         <div class="portfolio-card">
-          <img src="./img/skills.jpg" width="300px" height="300px" alt="" /> -->
+          <div class="portfolio-img-box">
+            <img src="./img/work6.webp" alt="" />
+          </div>
         </div>
       </div>
     </section>
     <!-- Skills section start -->
     <section class="skills" id="skills">
       <h2 class="title">Skills</h2>
-      <div class="skills-content bd-grid">
+      <div class="skills-content">
         <div class="skills-left">
           <div>
             <div class="skills-data">
@@ -163,6 +177,63 @@
       </div>
     </section>
     <!-- Contact section start -->
+    <section class="contact" id="contact">
+      <h2 class="title">Contact</h2>
+      <!-- Contact Container -->
+      <div class="contact-container">
+        <!-- Form -->
+        <div class="form-container">
+          <h3>Get in touch</h3>
+          <form action="" method="POST">
+            <div class="input-box">
+              <input type="text" required />
+              <label>Name</label>
+            </div>
+            <div class="input-box">
+              <input type="email" required />
+              <label>Email</label>
+            </div>
+            <div class="message-box">
+              <textarea></textarea>
+              <label>Message</label>
+            </div>
+            <div class="input-box">
+              <button type="submit">
+                <i class="fas fa-paper-plane fa-fw"></i> SEND
+              </button>
+            </div>
+          </form>
+          <!-- <form action="" class="contact-form">
+            <input type="text" placeholder="Your Name" required />
+            <input
+              type="email"
+              name=""
+              id=""
+              placeholder="Enter Your Email..."
+              required
+            />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Write Message Here..."
+              required
+            ></textarea>
+            <input type="submit" value="Send" class="send-button" />
+          </form> -->
+        </div>
+        <!-- Map -->
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d310846.4201639726!2d13.144552649364126!3d52.50651326822331!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a84e373f035901%3A0x42120465b5e3b70!2sBerlin%2C%20Germany!5e0!3m2!1sen!2s!4v1646657951755!5m2!1sen!2s"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+          ></iframe>
+        </div>
+      </div>
+    </section>
     <script src="./js/main.js"></script>
   </body>
 </html>
