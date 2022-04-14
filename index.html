@@ -21,6 +21,7 @@
       rel="stylesheet"
     />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.11/typed.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
     <!-- Navigation -->
@@ -46,7 +47,7 @@
     </nav>
     <section class="banner">
       <div class="main-container">
-        <div class="main left">
+        <div data-aos="flip-up" class="main left">
           <div class="main-text">
             <div class="text-1">Hi, I am</div>
             <div class="text-2">Louis Evans</div>
@@ -56,7 +57,7 @@
             ></a>
           </div>
         </div>
-        <div class="main right">
+        <div data-aos="flip-up" class="main right">
           <img src="./img/profile.png" class="main-img" alt="" />
         </div>
       </div>
@@ -65,7 +66,7 @@
     <section class="about" id="about">
       <div class="max-width">
         <h2 class="title">About</h2>
-        <div class="about-content">
+        <div data-aos="fade-down" class="about-content">
           <div class="column left">
             <img src="./img/profile2.jpg" class="about-img" alt="" />
           </div>
@@ -91,7 +92,7 @@
     <!-- Portfolio section start -->
     <section class="portfolio" id="portfolio">
       <h2 class="title">Portfolio</h2>
-      <div class="portfolio-content">
+      <div data-aos="fade-down" class="portfolio-content">
         <div class="portfolio-card">
           <div class="portfolio-img-box">
             <img src="./img/skills.jpg" alt="" />
@@ -127,7 +128,7 @@
     <!-- Skills section start -->
     <section class="skills" id="skills">
       <h2 class="title">Skills</h2>
-      <div class="skills-content">
+      <div data-aos="fade-down" class="skills-content">
         <div class="skills-left">
           <div>
             <div class="skills-data">
@@ -181,11 +182,15 @@
     <section class="contact" id="contact">
       <h2 class="title">Contact</h2>
       <!-- Contact Container -->
-      <div class="contact-container">
+      <div data-aos="fade-down" class="contact-container">
         <!-- Form -->
         <div class="form-container">
           <h3 class="form-title">Get in touch</h3>
-          <form action="" method="POST">
+          <form
+            action="https://formspree.io/f/mdobwdrk"
+            method="POST"
+            id="my-form"
+          >
             <div class="input-box">
               <input type="text" required />
               <label>&nbsp;Name&nbsp;</label>
@@ -198,6 +203,8 @@
               <textarea></textarea>
               <label>&nbsp;Message&nbsp;</label>
             </div>
+            <!-- Backend status -->
+            <div id="status"></div>
             <div class="input-box">
               <button type="submit">SEND</button>
             </div>
@@ -269,6 +276,13 @@
         </div>
       </div>
     </section>
+    <!-- AOS Library JS -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
     <script src="./js/main.js"></script>
   </body>
 </html>

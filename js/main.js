@@ -32,3 +32,33 @@ var typed = new Typed(".typing-2", {
   backSpeed: 60,
   loop: true,
 });
+
+// Contact backend
+var form = document.getElementById("my-form");
+
+async function handleSubmit(event) {
+  event.preventDefault();
+  var status = document.getElementById("status");
+  var data = new FormData(event.target);
+  fetch(event.target.action, {
+    method: form.method,
+    body: data,
+    headers: {
+      Accept: "application/json",
+    },
+  })
+    .then((response) => {
+      //   new add
+      status.classList.add("success");
+      //   new add end
+      status.innerHTML = "✓ Thank you! The form was submitted successfully.";
+      form.reset();
+    })
+    .catch((error) => {
+      //   new add
+      status.classList.add("error");
+      //   new add end
+      status.innerHTML = "✗ Oops! There was a problem submitting your form";
+    });
+}
+form.addEventListener("submit", handleSubmit);
